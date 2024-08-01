@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <title>FullMotos Store</title>
+    <script type="text/javascript" src="js/clarity_init.js"></script>
+    <script type="text/javascript" src="js/clarity.js"></script>
+  </head>
+  <body>
+    <header
+      class="h-screen bg-bg-hero bg-no-repeat bg-cover bg-center overflow-x-hidden text-white">
+      <nav class="absolute w-full backdrop-blur bg-neutral-800/5">
+        <div class="container">
+          <div
+            class="py-2 lg:py-4 lg:flex lg:justify-between lg:flex-row lg:items-center">
+            <input class="hidden" type="checkbox" id="navbar-toggle-cbox" />
+            <div class="flex justify-between items-center">
+              <div class="block lg:hidden">
+                <label class="flex" for="navbar-toggle-cbox">
+                  <i class="icons menu"></i>
+                  <i class="icons menu_open"></i>
+                </label>
+              </div>
+              <a href="/" class="">
+                <img
+                  width="110"
+                  height="32"
+                  src="./asset/images/logo.png"
+                  alt="logo" />
+              </a>
+              <a
+                href="tel:57-888-888-8888"
+                target="_self"
+                class="block lg:hidden">
+                <i class="icons phone_call"></i>
+              </a>
+            </div>
+            <div class="hidden menu-vertical lg:block" id="menu-header">
+              <ul
+                class="flex flex-col w-ful gap-4 text-sm py-2 lg:text-base lg:flex-row lg:gap-20">
+                <li class=""><a href="/" class="">Inicio</a></li>
+                <li class=""><a href="#services" class="">Servicios</a></li>
+                <li class="">
+                  <a href="#statistics" class="">Sobre Nosotros</a>
+                </li>
+              </ul>
+            </div>
+            <a
+              href="#getintouch"
+              class="hidden lg:inline-block w-full lg:max-w-52 text-center py-2 px-4 rounded-full bg-primary">
+              Llámanos
+            </a>
+          </div>
+        </div>
+      </nav>
+      <section class="h-full container flex flex-col justify-center">
+        <div class="text-center xl:text-left xl:grid xl:grid-cols-4">
+          <div class="md:col-span-3">
+            <p
+              class="text-primary text-4xl/tight lg:text-6xl/tight xl:text-7xl/tight font-semibold">
+              Revitalice su motocicleta con limpieza experta
+            </p>
+            <p class="md:text-lg xl:text-2xl/normal mt-4 mb-10">
+              Experimente un cuidado y precisión incomparables con nuestros
+              servicios profesionales de limpieza y detallado, diseñados para
+              mantener su moto en óptimas condiciones.
+            </p>
+            <div class="flex gap-4 lg:gap-8 justify-center xl:justify-start">
+              <a
+                href="tel:57-888-888-8888"
+                target="_self"
+                class="w-full lg:max-w-56 text-center py-3 px-4 rounded-full bg-primary border-2 border-primary lg:text-xl">
+                Llámanos
+              </a>
+              <a
+                href="#services"
+                class="w-full lg:max-w-56 text-center py-3 px-4 rounded-full border-white border-2 lg:text-xl">
+                Más servicios
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="highlight" class="py-10 md:py-20">
+        <div class="container grid lg:grid-cols-2 xl:grid-cols-12 gap-8">
+          <div class="lg:order-1 xl:col-span-7">
+            <p class="text-2xl md:text-4xl/normal font-medium text-gray-800">
+              Lavado y Limpieza Profesional de Motocicletas
+            </p>
+            <p class="mt-4 lg:mt-6 text-gray-500 lg:text-xl font-light">
+              Somos apasionados por brindar el mejor cuidado para motocicletas.
+              Nuestro equipo de profesionales experimentados se dedica a ofrecer
+              la más alta calidad en lavado y detallado, asegurando que tu moto
+              luzca y se sienta en su mejor estado.
+            </p>
+            <div
+              class="my-6 lg;my-10 flex flex-col gap-4 text-lg lg:text-xl text-gray-700">
+              <div class="flex items-center">
+                <i class="icons eco"></i>
+                <p class="ml-2">
+                  Productos ecológicos y de alta calidad para una limpieza y
+                  brillo superiores.
+                </p>
+              </div>
+              <div class="flex items-center">
+                <i class="icons effect"></i>
+                <p class="ml-2">
+                  Herramientas de última generación para resultados
+                  excepcionales y eficientes.
+                </p>
+              </div>
+              <div class="flex items-center">
+                <i class="icons advanced"></i>
+                <p class="ml-2">
+                  Gama completa de servicios, desde lavados básicos hasta
+                  detallado avanzado.
+                </p>
+              </div>
+            </div>
+            <a
+              href="tel:57-888-888-8888"
+              target="_self"
+              class="w-full text-white lg:max-w-48 text-center inline-block py-2 px-4 rounded-full bg-primary xl:text-xl">
+              Llámanos
+            </a>
+          </div>
+          <div class="xl:col-span-5 flex flex-row items-center gap-6">
+            <div>
+              <picture class="">
+                <img
+                  src="./asset/images/img-hl-1.jpeg"
+                  alt="motos services"
+                  class="aspect-[3/4] object-cover rounded-3xl" />
+              </picture>
+            </div>
+            <div class="flex flex-col gap-6">
+              <picture>
+                <img
+                  src="./asset/images/img-hl-2.jpeg"
+                  alt="motos highlight"
+                  class="aspect-square object-cover rounded-3xl" />
+              </picture>
+              <picture>
+                <img
+                  src="./asset/images/img-hl-3.jpeg"
+                  alt="motos highlight"
+                  class="aspect-square object-cover rounded-3xl" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="services"
+        class="bg-gray-900 py-10 md:py-20 xl:py-24 text-white">
+        <div class="container text-center">
+          <p class="mb-8 md:mb-14 text-2xl md:text-4xl font-medium">
+            Nuestros Servicios
+          </p>
+          <div class="flex flex-wrap justify-center gap-8">
+            <div class="px-4 w-80">
+              <i class="size-16 icons oil"></i>
+              <p class="text-lg md:text-2xl font-medium mt-2 md:mt-6 mb-2">
+                Cambios de Aceite
+              </p>
+              <p class="text-sm md:text-base">
+                Los cambios regulares de aceite y filtro ayudan a que su motor
+                funcione sin problemas y eficientemente.
+              </p>
+            </div>
+            <div class="px-4 w-80">
+              <i class="size-16 icons brakes"></i>
+              <p class="text-lg md:text-2xl font-medium mt-2 md:mt-6 mb-2">
+                Frenos ABS
+              </p>
+              <p class="text-sm md:text-base">
+                El mantenimiento de los frenos es esencial para la operación
+                segura del vehículo y su longevidad.
+              </p>
+            </div>
+            <div class="px-4 w-80">
+              <i class="size-16 icons transmission"></i>
+              <p class="text-lg md:text-2xl font-medium mt-2 md:mt-6 mb-2">
+                Servicio de Transmisión
+              </p>
+              <p class="text-sm md:text-base">
+                Una transmisión bien mantenida puede extender la vida útil de su
+                vehículo y ahorrar dinero.
+              </p>
+            </div>
+            <div class="px-4 w-80">
+              <i class="size-16 icons motowash"></i>
+              <p class="text-lg md:text-2xl font-medium mt-2 md:mt-6 mb-2">
+                Lavado y Limpieza
+              </p>
+              <p class="text-sm md:text-base">
+                Mantener su motor limpio, lavándolo regularmente, puede mejorar
+                el consumo de combustible y prolongar la vida de la pintura.
+              </p>
+            </div>
+            <div class="px-4 w-80">
+              <i class="size-16 icons tire"></i>
+              <p class="text-lg md:text-2xl font-medium mt-2 md:mt-6 mb-2">
+                Neumáticos y Ruedas
+              </p>
+              <p class="text-sm md:text-base">
+                Las inspecciones regulares de neumáticos y el servicio pueden
+                prevenir accidentes y ahorrarle dinero.
+              </p>
+            </div>
+            <div class="px-4 w-80">
+              <i class="size-16 icons engine"></i>
+              <p class="text-lg md:text-2xl font-medium mt-2 md:mt-6 mb-2">
+                Rendimiento del Motor
+              </p>
+              <p class="text-sm md:text-base">
+                Un motor bien afinado ofrece un rendimiento óptimo y eficiencia
+                en el consumo de combustible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="bg-bg-combo bg-cover bg-center bg-no-repeat">
+        <div class="bg-white bg-opacity-90 py-10 md:py-16 lg:py-20">
+          <div class="container text-center">
+            <p class="text-2xl md:text-4xl font-medium text-gray-900">
+              Servicios Combinados
+            </p>
+            <p class="mt-2 mb-6 md:mb-10 font-light text-gray-500 md:text-xl">
+              Nuestros paquetes de servicios están diseñados de manera flexible
+              para adaptarse a cada una de sus necesidades, ayudándole a ahorrar
+              al máximo en costos.
+            </p>
+            <div
+              class="flex flex-wrap justify-center items-start gap-4 md:gap-8">
+              <div
+                class="w-[24rem] lg:w-[26rem] px-8 py-6 bg-neutral-300 rounded-md">
+                <p class="text-lg md:text-2xl font-medium mb-2">
+                  Lavada Sencilla
+                </p>
+                <div class="">
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $10.000
+                    </span>
+                    <span class="text-gray-500">(-250cc)</span>
+                  </p>
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $12.000
+                    </span>
+                    <span class="text-gray-500">(+250cc)</span>
+                  </p>
+                </div>
+                <hr class="border-gray-800 my-4" />
+                <div class="grid gap-2 lg:gap-4">
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Lavado General
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">Llantil</p>
+                  </div>
+                </div>
+                <a
+                  href="tel:57-888-888-8888"
+                  target="_self"
+                  class="w-full text-white mt-4 text-center inline-block py-2 px-4 rounded-full bg-gray-800">
+                  Llámanos Ahora
+                </a>
+              </div>
+              <div
+                class="w-[24rem] lg:w-[26rem] px-8 py-6 bg-neutral-300 rounded-md">
+                <p class="text-lg md:text-2xl font-medium mb-2">Lavada Full</p>
+                <div class="">
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $14.000
+                    </span>
+                    <span class="text-gray-500">(-250cc)</span>
+                  </p>
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $17.000
+                    </span>
+                    <span class="text-gray-500">(+250cc)</span>
+                  </p>
+                </div>
+                <hr class="border-gray-800 my-4" />
+                <div class="grid gap-2 lg:gap-4">
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Lavado General
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">Llantil</p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Brillada
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Silicona
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="tel:57-888-888-8888"
+                  target="_self"
+                  class="w-full text-white mt-4 text-center inline-block py-2 px-4 rounded-full bg-gray-800">
+                  Llámanos Ahora
+                </a>
+              </div>
+              <div
+                class="w-[24rem] lg:w-[26rem] px-8 py-6 bg-neutral-300 rounded-md">
+                <p class="text-lg md:text-2xl font-medium mb-2">
+                  Lavada Full Restaurada
+                </p>
+                <div class="">
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $18.000
+                    </span>
+                    <span class="text-gray-500">(-250cc)</span>
+                  </p>
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $21.000
+                    </span>
+                    <span class="text-gray-500">(+250cc)</span>
+                  </p>
+                </div>
+                <hr class="border-gray-800 my-4" />
+                <div class="grid gap-2 lg:gap-4">
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Lavado General
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">Llantil</p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Brillada
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Silicona
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Restaurador de piezas Negras
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="tel:57-888-888-8888"
+                  target="_self"
+                  class="w-full text-white mt-4 text-center inline-block py-2 px-4 rounded-full bg-gray-800">
+                  Llámanos Ahora
+                </a>
+              </div>
+              <div
+                class="w-[24rem] lg:w-[26rem] px-8 py-6 bg-neutral-300 rounded-md">
+                <p class="text-lg md:text-2xl font-medium mb-2">
+                  Lavada Full + Desmanchada
+                </p>
+                <div class="">
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $22.000
+                    </span>
+                    <span class="text-gray-500">(-250cc)</span>
+                  </p>
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $25.000
+                    </span>
+                    <span class="text-gray-500">(+250cc)</span>
+                  </p>
+                </div>
+                <hr class="border-gray-800 my-4" />
+                <div class="grid gap-2 lg:gap-4">
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Lavado General
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">Llantil</p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Brillada
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Silicona
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Desmanchada
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="tel:57-888-888-8888"
+                  target="_self"
+                  class="w-full text-white mt-4 text-center inline-block py-2 px-4 rounded-full bg-gray-800">
+                  Llámanos Ahora
+                </a>
+              </div>
+              <div
+                class="w-[24rem] lg:w-[26rem] px-8 py-6 bg-neutral-300 rounded-md">
+                <p class="text-lg md:text-2xl font-medium mb-2">
+                  Lavada Full Restaurada + Desmanchada
+                </p>
+                <div class="">
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $25.000
+                    </span>
+                    <span class="text-gray-500">(-250cc)</span>
+                  </p>
+                  <p class="font-semibold">
+                    <span class="text-primary text-xl md:text-2xl lg:text-3xl">
+                      $28.000
+                    </span>
+                    <span class="text-gray-500">(+250cc)</span>
+                  </p>
+                </div>
+                <hr class="border-gray-800 my-4" />
+                <div class="grid gap-2 lg:gap-4">
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Lavado General
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">Llantil</p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Brillada
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Silicona
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Restaurador de piezas Negras
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="icons addtask"></i>
+                    <p class="ml-2 text-gray-700 text-lg lg:text-xl">
+                      Desmanchada
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="tel:57-888-888-8888"
+                  target="_self"
+                  class="w-full text-white mt-4 text-center inline-block py-2 px-4 rounded-full bg-gray-800">
+                  Llámanos Ahora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="pricing-2"
+        class="py-10 md:py-16 bg-bg-helmet bg-center bg-cover bg-no-repeat">
+        <div class="container text-center text-white">
+          <p class="text-3xl/tight md:text-5xl/tight font-semibold">
+            Limpieza y Desinfección de Cascos a Vapor
+          </p>
+          <p class="md:text-xl mb-8 mt-2">
+            Nuestro servicio de limpieza y desinfección con vapor garantiza que
+            su casco esté completamente limpio y sanitizado. Utilizando
+            tecnología avanzada de vapor, eliminamos suciedad, sudor, bacterias
+            y olores, asegurando que su casco se mantenga fresco e higiénico.
+          </p>
+          <a
+            href="tel:57-888-888-8888"
+            target="_self"
+            class="w-full lg:max-w-52 lg:text-xl text-center inline-block py-2 px-4 rounded-full bg-primary">
+            Llámanos Ahora
+          </a>
+        </div>
+      </section>
+      <section id="statistics" class="py-10 md:py-20">
+        <div class="container">
+          <div class="text-center lg:text-left lg:grid lg:grid-cols-12 gap-8">
+            <div class="lg:col-span-7">
+              <p class="text-2xl md:text-4xl font-medium text-gray-900">
+                ¿Por Qué Elegirnos?
+              </p>
+              <p class="my-6 font-light text-gray-500 md:text-lg">
+                Nuestro impresionante historial habla por sí mismo. Aquí hay
+                algunas estadísticas clave que destacan nuestra experiencia y
+                compromiso con la calidad. Únase a nuestra creciente lista de
+                clientes satisfechos y experimente la diferencia que un
+                detallado profesional de motocicletas puede hacer. Su moto
+                merece lo mejor, y nosotros no entregamos menos.
+              </p>
+              <div
+                class="mb-8 lg:mb-0 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-left">
+                <div class="grid grid-cols-2 items-center gap-4">
+                  <p
+                    class="text-right text-4xl md:text-5xl font-medium text-primary">
+                    12
+                  </p>
+                  <p class="md:text-lg">Años de experiencia</p>
+                </div>
+                <div class="grid grid-cols-2 items-center gap-4">
+                  <p
+                    class="text-right text-4xl md:text-5xl font-medium text-primary">
+                    3.9K
+                  </p>
+                  <p class="md:text-lg">Vehículos Reparados</p>
+                </div>
+                <div class="grid grid-cols-2 items-center gap-4">
+                  <p
+                    class="text-right text-4xl md:text-5xl font-medium text-primary">
+                    32
+                  </p>
+                  <p class="md:text-lg">Técnicos y Trabajadores</p>
+                </div>
+                <div class="grid grid-cols-2 items-center gap-4">
+                  <p
+                    class="text-right text-4xl md:text-5xl font-medium text-primary">
+                    100%
+                  </p>
+                  <p class="md:text-lg">Clientes Satisfechos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5">
+              <div class="w-full overflow-hidden pt-[56.25%] relative">
+                <iframe
+                  class="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/Duh2Nb_3oCE"
+                  title="Darkness Unleashed: The 2024 Yamaha MT-09"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cta" class="py-10 md:py-20 bg-bg-cta bg-center bg-cover">
+        <div
+          class="container text-center md:text-left md:items-center md:grid md:grid-cols-4 gap-8 text-white">
+          <div class="md:col-span-3 mb-6 md:mb-0">
+            <p class="text-2xl md:text-4xl/normal font-semibold">
+              ¿Listo para Experimentar el Mejor Detallado de Motocicletas?
+            </p>
+            <p class="md:text-lg mt-2">
+              No espere más para darle a su motocicleta el cuidado que se
+              merece. Nuestro equipo está listo para ofrecer un servicio de
+              primera calidad y hacer que su moto brille como nueva.
+            </p>
+          </div>
+          <div class="">
+            <a
+              href="tel:57-888-888-8888"
+              target="_self"
+              class="w-full text-center inline-block py-2 px-4 rounded-full lg:text-xl bg-primary">
+              Llámanos Ahora
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="map" class="grid md:grid-cols-2">
+        <div class="bg-img-map bg-center bg-cover">
+          <picture></picture>
+        </div>
+        <div class="px-4 md:px-8 py-8">
+          <p class="text-2xl md:text-4xl font-medium text-gray-900">
+            ¡Estamos Aquí para Ayudar!
+          </p>
+          <p class="my-4 font-light text-gray-600 text-base md:text-lg">
+            Ya sea que tenga una pregunta sobre nuestros servicios, necesite una
+            cotización o quiera programar una cita, estamos aquí para asistirle.
+            Póngase en contacto con nosotros a través de cualquiera de los
+            siguientes métodos, y nuestro amable equipo le responderá
+            rápidamente.
+          </p>
+          <div class="flex items-center font-medium mb-6">
+            <i class="icons location"></i>
+            <div class="ml-4 text-gray-700">
+              <p class="">Cra. 1 Nte. #73-03,</p>
+              <p class="">COMUNA 6, Cali, Valle del Cauca, Colombia</p>
+            </div>
+          </div>
+          <div class="flex items-center font-medium mb-6">
+            <i class="icons schedule"></i>
+            <div class="ml-4 text-gray-700">
+              <p class="">Open Hours</p>
+              <p class="">8:00 - 18:00 | 24/5</p>
+            </div>
+          </div>
+          <div class="flex items-center font-medium">
+            <i class="icons email"></i>
+            <div class="ml-4 text-gray-700">
+              <p class="">+57 979 979 8686</p>
+              <p class="">motoreswash@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-bg-footer bg-cover bg-center bg-neutral-800/85 text-white">
+      <div class="bg-neutral-800/85">
+        <div class="container pt-8">
+          <div class="grid gap-4 md:grid-cols-3 md:gap-8">
+            <div
+              class="md:col-span-2 justify-self-center md:justify-self-start">
+              <a href="/" class="">
+                <img
+                  width="110"
+                  height="40"
+                  src="./asset/images/logo.png"
+                  alt="logo" />
+              </a>
+            </div>
+            <div class="flex flex-col w-full gap-4">
+              <ul
+                class="flex justify-between md:justify-end md:gap-10 xl:gap-20">
+                <li class=""><a href="/" class="">Inicio</a></li>
+                <li class=""><a href="#services" class="">Servicios</a></li>
+                <li class="">
+                  <a href="#statistics" class="">Sobre Nosotros</a>
+                </li>
+              </ul>
+              <hr class="border-white" />
+            </div>
+          </div>
+          <div class="flex justify-center md:justify-end gap-10 my-8">
+            <a href="">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="../asset/icons/40_facebook.svg" />
+                <img
+                  src="../asset/icons/56_facebook.svg"
+                  alt="facebook"
+                  class="" />
+              </picture>
+            </a>
+            <a href="">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="../asset/icons/40_ig.svg" />
+                <img src="../asset/icons/56_ig.svg" alt="instagram" class="" />
+              </picture>
+            </a>
+            <a href="">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="../asset/icons/40_x.svg" />
+                <img src="../asset/icons/56_x.svg" alt="x" class="" />
+              </picture>
+            </a>
+            <a href="">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="../asset/icons/40_linkedin.svg" />
+                <img
+                  src="../asset/icons/56_linkedin.svg"
+                  alt="linkedin"
+                  class="" />
+              </picture>
+            </a>
+          </div>
+          <div class="">
+            <hr class="border-white" />
+            <div
+              class="flex flex-col items-center lg:flex-row justify-between py-4">
+              <p class="">©2024 EzSol Inc. Derechos Reservados.</p>
+              <p class="">
+                Todos los demás logotipos y marcas comerciales son propiedad de
+                sus respectivos dueños.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

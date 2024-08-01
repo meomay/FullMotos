@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url("../asset/fonts/Inter.ttf");
+}
+
+@layer base {
+  body {
+    font-family: Inter, system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #navbar-toggle-cbox:checked ~ .menu-vertical {
+    display: block;
+  }
+
+  #navbar-toggle-cbox:not(checked) + div .menu_open {
+    display: none;
+  }
+
+  #navbar-toggle-cbox:checked + div .menu {
+    display: none;
+  }
+
+  #navbar-toggle-cbox:checked + div .menu_open {
+    display: inline-block;
+  }
+}
+
+@layer utilities {
+  /* icon list */
+  i.icons {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+  }
+  i.icons.menu {
+    content: url(../asset/icons/32_menu.svg);
+  }
+  i.icons.menu_open {
+    content: url(../asset/icons/32_menu_open.svg);
+  }
+  i.icons.phone_call {
+    content: url(../asset/icons/32_phone_call.svg);
+  }
+  i.icons.addtask {
+    content: url(../asset/icons/32_addtask.svg);
+  }
+  i.icons.eco {
+    content: url(../asset/icons/32_eco.svg);
+  }
+  i.icons.advanced {
+    content: url(../asset/icons/32_advanced.svg);
+  }
+  i.icons.effect {
+    content: url(../asset/icons/32_effect.svg);
+  }
+  i.icons.location {
+    width: 48px;
+    height: 48px;
+    content: url(../asset/icons/48_location.svg);
+  }
+  i.icons.schedule {
+    width: 48px;
+    height: 48px;
+    content: url(../asset/icons/48_schedule.svg);
+  }
+  i.icons.email {
+    width: 48px;
+    height: 48px;
+    content: url(../asset/icons/48_email.svg);
+  }
+  i.icons.brakes {
+    width: 72px;
+    height: 72px;
+    content: url(../asset/icons/124_brakes.svg);
+    @media only screen and (min-width: 768px) {
+      width: 124px;
+      height: 124px;
+    }
+  }
+  i.icons.engine {
+    width: 72px;
+    height: 72px;
+    content: url(../asset/icons/124_engine.svg);
+    @media only screen and (min-width: 768px) {
+      width: 124px;
+      height: 124px;
+    }
+  }
+  i.icons.motowash {
+    width: 72px;
+    height: 72px;
+    content: url(../asset/icons/124_motowash.svg);
+    @media only screen and (min-width: 768px) {
+      width: 124px;
+      height: 124px;
+    }
+  }
+  i.icons.oil {
+    width: 72px;
+    height: 72px;
+    content: url(../asset/icons/124_oil.svg);
+    @media only screen and (min-width: 768px) {
+      width: 124px;
+      height: 124px;
+    }
+  }
+  i.icons.tire {
+    width: 72px;
+    height: 72px;
+    content: url(../asset/icons/124_tire.svg);
+    @media only screen and (min-width: 768px) {
+      width: 124px;
+      height: 124px;
+    }
+  }
+  i.icons.transmission {
+    width: 72px;
+    height: 72px;
+    content: url(../asset/icons/124_transmission.svg);
+    @media only screen and (min-width: 768px) {
+      width: 124px;
+      height: 124px;
+    }
+  }
+}
